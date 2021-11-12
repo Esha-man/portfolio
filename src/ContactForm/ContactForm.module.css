@@ -1,9 +1,47 @@
+.formBlock {
+    min-height: 50vh;
+    background-color: #cbf5de;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.formContainer {
+    height: 100%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid;
+
+}
+.contacts{
+    background-color: #dbeaf8;
+}
 .form {
+    height: 130px;
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid;
 
 }
-.name{
 
+.item {
+width: 100%;
 }
-.mail{
 
+
+.messageTextarea {
+    width: 100%;
+}
+
+.submitButton {
+    height: 25px;
+    width: 100px;
 }

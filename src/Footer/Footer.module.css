@@ -1,0 +1,33 @@
+.footerBlock {
+    height: 200px;
+    background-color: #dbf8e9;
+
+}
+.footerContainer{
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    /*flex-wrap: wrap;*/
+
+    border: 1px solid;
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.pages{
+    min-width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /*flex-wrap: wrap;*/
+    margin-bottom: 10px;
+    border: 1px solid;
+}
+
+.item {
+    height: 50px;
+    width: 50px;
+    background-color: #35f606;
+}

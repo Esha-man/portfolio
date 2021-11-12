@@ -1,0 +1,53 @@
+.mainBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    min-height: 100vh;
+    background-color: aliceblue;
+    border: 1px solid yellow;
+}
+
+
+.mainHeader {
+
+}
+
+.mainContainer {
+    border: 1px solid;
+    min-height: 100vh;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.photo {
+    width: 300px;
+    height: 400px;
+    /*background-color: #a3f5d9;*/
+    background-image: url("https://cdn-icons-png.flaticon.com/512/147/147144.png");
+    background-size: cover;
+    background-position: center;
+
+}
+
+.text {
+    width: 500px;
+    background-color: aqua;
+
+}
+
+.meInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.spanDeveloper {
+
+}

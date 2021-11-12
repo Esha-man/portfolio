@@ -1,0 +1,26 @@
+.aboutMeContainer {
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    /*flex-wrap: wrap;*/
+
+}
+
+.aboutMeRow {
+    width: 220px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /*flex-wrap: wrap;*/
+    margin-bottom: 5px;
+
+
+}
+
+.aboutMeTitle::after {
+    content: ":"
+}
+
+.aboutMeValue {
+
+}
