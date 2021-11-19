@@ -1,4 +1,3 @@
-import { type } from "os";
 import React, { useState } from "react";
 import style from "./AboutMe.module.css";
 

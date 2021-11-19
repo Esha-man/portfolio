@@ -1,21 +1,20 @@
 .oneProject {
     width: 300px;
-    background-color: aqua;
+   
     display: flex;
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
     text-align: center;
     margin: 5px;
-
-  /*картинка уползла вправо:   */
+    border: 1px solid aliceblue;
     padding: 20px;
     box-sizing: border-box;
+    
 }
 
-/*.oneProjectContainer{*/
-
-/*}*/
+/* .oneProjectContainer{
+} */
 
 .icon {
     height: 250px;
@@ -25,9 +24,27 @@
 .watch {
     height: 10px;
     width: 50px;
-    background-color: #dbeaf8;
+   
 }
 
 .description {
 
+}
+
+@media screen and (max-width: 781px) {
+    .oneProject {
+        width: 100%;
+    }
+    .icon {
+        height: 200px;
+        width: 200px;
+    }
+}
+@media screen and (max-width: 300px) {
+    
+    .icon {
+        max-width: 100px;
+        max-height: 100px;
+        display: block;
+    }
 }

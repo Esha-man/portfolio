@@ -1,4 +1,9 @@
 
+.headingWrapper {
+  border: 1px solid white;
+}
+
 .heading{
-  background-color: #eee36a;
+  /* background-color: #eee36a; */
+  
 }

@@ -17,8 +17,8 @@ export const Projects = () => {
         { icon: "", title: "Todolist TS", description: "Todolist TS Todolist TS Todolist TS Todolist TS Todolist TS Todolist TS Todolist TS Todolist TS Todolist TS" },
         { icon: "", title: "Social network", description: "Social networkSocial networkSocial networkSocial networkSocial networkSocial networkSocial networkSocial network" },
         { icon: "", title: "Counter", description: "Counter CounterCounter Counter Counter CounterCounter CounterCounter Counter Counter Counter" },
-        { icon: "", title: "Components", description: "ComponentsComponents Components Components Components ComponentsComponents Components Components Components Components ComponentsComponents" },
-        { icon: "", title: "SOME PROJECT", description: "SOME PROJECT SOME PROJECT SOME PROJECT SOME PROJECT SOME PROJECT SOME PROJECT SOME PROJECT SOME PROJECT SOME PROJECT" },
+        { icon: "", title: "Components", description: "Components Components Components Components Components Components Components Components Components Components Components Components Components" },
+        { icon: "", title: "Some project", description: "SOME PROJECT SOME PROJECT SOME PROJECT SOME PROJECT SOME PROJECT SOME PROJECT SOME PROJECT SOME PROJECT SOME PROJECT" },
     ])
 
     return (

@@ -1,10 +1,11 @@
 .formBlock {
     min-height: 50vh;
-    background-color: #cbf5de;
+    /* background-color: #343a40; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border: 1px solid white;
 
 }
 

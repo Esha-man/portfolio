@@ -1,4 +1,14 @@
 .App {
     display: flex;
     flex-direction: column;
+    background-color: rgb(25, 29, 43);
+    color: rgb(164, 172, 196);
+    font-family: Nunito, sans-serif;
 }
+h1,h2,h3,h4 {
+  color: rgb(255, 255, 255);
+}
+
+/* .App:nth-child(odd){
+  background-color:#6c757d;
+} */

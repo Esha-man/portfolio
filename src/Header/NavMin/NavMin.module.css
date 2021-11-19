@@ -1,0 +1,19 @@
+.navMin {
+  border: 1px solid;
+  width: 300px;
+  display: flex;
+  justify-content: end;
+}
+@media screen and (min-width: 1129px) {
+  .navMin {
+    display: none;
+  }
+}
+
+.toggleButtonMenu {
+  background-color: black;
+}
+.toggleButtonX {
+  background-color: black;
+  width: 50px;
+}

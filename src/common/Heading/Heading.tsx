@@ -1,4 +1,4 @@
-import style from "./Heading.module.css"
+import styles from "./Heading.module.css"
 
 type HeadingPropsType = {
   heading: string
@@ -7,9 +7,9 @@ type HeadingPropsType = {
 
 export const Heading = (props: HeadingPropsType) => {
   return (
-    <>
-      <h2 className={style.heading}>{props.heading}</h2>
+    <div className={styles.headingWrapper}>
+      <h2 className={styles.heading}>{props.heading}</h2>
       <h4>{props.descriptionHeading}</h4>
-    </>
+    </div>
   )
 }

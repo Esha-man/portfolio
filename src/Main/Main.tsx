@@ -1,7 +1,7 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import style from "./Main.module.css"
 import { AboutMe } from "./AboutMe/AboutMe";
-import {Heading} from "../common/Heading/Heading"
+import { Heading } from "../common/Heading/Heading"
 
 type AboutMeRowsObjType = {
     title: string
@@ -29,7 +29,7 @@ export const Main = () => {
             <div className={style.mainContainer}>
 
                 <div className={style.photo}>
-                   {/* some photo */}
+                    {/* some photo */}
                 </div>
 
                 <div className={style.text}>
@@ -38,9 +38,7 @@ export const Main = () => {
                         heading={"Фамилия Имя"}
                         descriptionHeading={"I like programming to ReactJS CSS etc"}
                     />
-                    {/* <h2>Фамилия Имя</h2>
-                    <h4>I like programming to ReactJS CSS etc</h4> */}
-
+                  
                     <p>
                         Lorem ipsum — классический текст-«рыба». Является искажённым отрывком из философского трактата
                         Марка Туллия Цицерона «О пределах добра и зла»,
@@ -49,8 +47,8 @@ export const Main = () => {
                     </p>
                     <div className={style.meInfo}>
 
-                    <AboutMe/>
-                      
+                        <AboutMe />
+
                     </div>
                 </div>
             </div>

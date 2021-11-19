@@ -1,7 +1,5 @@
 .header {
-    height: 80px;
-
-    background-color: aqua;
+    height: 10vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,5 +10,5 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    background-color: #dbeaf8;
+    border: 1px solid white;
 }

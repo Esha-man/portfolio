@@ -1,23 +1,31 @@
 .one_skill {
-    width: 250px;
-    background-color: aqua;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
-    text-align: center;
-    /*margin-bottom: 5px;*/
-margin: 5px;
-    padding: 20px;
-    box-sizing: border-box;
+  width: 250px;
+  /* background-color: aqua; */
+  border: 1px solid aliceblue;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: center;
+  /*margin-bottom: 5px;*/
+  margin: 5px;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+          background-color: rgb(46, 52, 78);
 }
 
 .icon {
-    height: 60px;
-    width: 60px;
-    background-color: #35f606;
+  height: 60px;
+  width: 60px;
+  background-color: #35f606;
 }
-
-.description {
-    /*word-wrap: break-word;*/
-}
+/*# sourceMappingURL=OneSkill.module.css.map */

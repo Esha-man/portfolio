@@ -1,7 +1,6 @@
 .projectsBlock {
-    /*height: 100vh;*/
     min-height: 100vh;
-    background-color: #dbf8e9;
+    border: 1px solid white;
 
 }
 .projectsContainer {
@@ -18,7 +17,6 @@
 }
 
 .title {
-background-color: #e0e0ef;
 }
 
 .allProjects {
