@@ -1,24 +1,44 @@
 .aboutMeContainer {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .aboutMeRow {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-bottom: 5px;
-
-
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  /* margin-bottom: 5px; */
 }
-
-.aboutMeTitle::after {
-    content: ":"
+.aboutMeTitle {
+  width: 20%;
+  height: 20px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.88em;
+}
+.aboutMeTitle span {
+  width: 100%
 }
 
 .aboutMeValue {
+  font-size: 0.88em;
+  /* padding: 3%; */
+  margin-left: 5%;
+}
 
+.aboutMeTitle::after {
+  content: "|";
+}
+
+@media screen and (max-width: 400px) {
+  .aboutMeRow {
+    font-size: 14px;
+  }
+  .aboutMeTitle {
+    width: 40%;
+    font-size: 14px;
+  }
 }

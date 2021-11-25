@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import style from "./Main.module.css"
+import styles from "./Main.module.css"
 import { AboutMe } from "./AboutMe/AboutMe";
 import { Heading } from "../common/Heading/Heading"
 
@@ -19,33 +19,30 @@ export const Main = () => {
     ])
 
     return (
-        <div className={style.mainBlock}>
+        <div className={styles.mainBlock}>
 
-            <div className={style.mainHeader}>
+            <div className={styles.mainHeaderWrapper}>
                 <h1>About me</h1>
-                <p>Frontend-<span className={style.spanDeveloper}>developer</span></p>
+                <div className={styles.line}><span></span></div>
             </div>
 
-            <div className={style.mainContainer}>
+            <div className={styles.mainContainer}>
 
-                <div className={style.photo}>
+                <div className={styles.photo}>
                     {/* some photo */}
                 </div>
 
-                <div className={style.text}>
+                <div className={styles.text}>
 
-                    <Heading
-                        heading={"Фамилия Имя"}
-                        descriptionHeading={"I like programming to ReactJS CSS etc"}
-                    />
-                  
+                    <h2 className={styles.aboutName}>Hi, i am <span>Egor Shabanov</span></h2>
+                
                     <p>
                         Lorem ipsum — классический текст-«рыба». Является искажённым отрывком из философского трактата
                         Марка Туллия Цицерона «О пределах добра и зла»,
                         написанного в 45 году до н. э. на латинском языке, обнаружение сходства приписывается
                         Ричарду МакКлинтоку.
                     </p>
-                    <div className={style.meInfo}>
+                    <div className={styles.meInfo}>
 
                         <AboutMe />
 

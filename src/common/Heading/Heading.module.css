@@ -1,9 +1,36 @@
-
 .headingWrapper {
-  border: 1px solid white;
+  /* border: 1px solid white; */
+  position: relative;
+  padding-bottom: 15px;
+  text-transform: uppercase;
+
+  margin-bottom: 60px;
+  z-index: 1;
 }
 
-.heading{
-  /* background-color: #eee36a; */
-  
+.heading {
+  font-weight: 600;
+}
+/* .descriptionHeading {
+  font-weight: 500;
+} */
+.line {
+  position: absolute;
+  left: 0;
+  top: auto;
+  bottom: 0;
+  border-radius: 100px;
+  width: 35px;
+  height: 5px;
+  background: #037fff;
+}
+.line span {
+  position: absolute;
+  left: 0;
+  top: auto;
+  bottom: 0;
+  border-radius: 100px;
+  height: 5px;
+  width: 100px;
+  background: rgba(3, 127, 255, 0.3);
 }

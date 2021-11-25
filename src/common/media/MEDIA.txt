@@ -14,7 +14,16 @@
  height: 90px;
   width: 90px;
 }
- 3. OneProject -> (max-width: 781px) { width: 100%;} .icon {
+3. OneProject -> (max-width: 781px) { width: 100%;} .icon {
      height: 200px;
      width: 200px;
     }
+4. AboutMe -> (max-width: 400px) {
+  .aboutMeRow {
+    font-size: 14px;
+  }
+  .aboutMeTitle {
+    width: 40%;
+    font-size: 14px;
+  }
+}

@@ -1,56 +1,87 @@
 .mainBlock {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 100vh;
-    font-weight: 400;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  /* font-weight: 400; */
 }
 
+.mainHeaderWrapper {
+  font-weight: 700;
+  margin-bottom: 60px;
+  position: relative;
+  padding-bottom: 15px;
+  text-transform: uppercase;
 
+  margin-bottom: 60px;
+  z-index: 1;
+}
+
+.line {
+    position: absolute;
+    left: 0;
+    top: auto;
+    bottom: 0;
+    border-radius: 100px;
+    width: 35px;
+    height: 5px;
+    background: #037fff;
+    /* background: #35f606; */
+    z-index: 1;
+  }
+  .line span {
+    position: absolute;
+    left: 0;
+    top: auto;
+    bottom: 0;
+    border-radius: 100px;
+    height: 5px;
+    width: 100px;
+    background: rgba(3, 127, 255, 0.3);
+    /* background: #5abe46; */
+  }
 
 .mainContainer {
-    border: 1px solid;
-    min-height: 80vh;
-    width: 80%;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-   
+  border: 1px solid;
+  min-height: 80vh;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .photo {
-    width: 300px;
-    height: 400px;
-    /*background-color: #a3f5d9;*/
-    background-image: url("https://cdn-icons-png.flaticon.com/512/147/147144.png");
-    background-size: cover;
-    background-position: center;
-
+  width: 300px;
+  height: 400px;
+  /*background-color: #a3f5d9;*/
+  background-image: url("https://cdn-icons-png.flaticon.com/512/147/147144.png");
+  background-size: cover;
+  background-position: center;
 }
 
 .text {
-    width: 500px;
-    /* background-color: aqua; */
-border: 1px solid white;
+  width: 500px;
+  /* background-color: aqua; */
+  border: 1px solid white;
+}
+
+.aboutName {
+  font-weight: 500;
+}
+.aboutName span {
+  color: #037fff;
+  /* color: #35f606; */
 }
 
 .meInfo {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-.spanDeveloper {
 
-}
-
-/* @media screen and (max-width: 1023px) {
-    .mainContainer {
-        font-size: xx-large;
-    }
-} */

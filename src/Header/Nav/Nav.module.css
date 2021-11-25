@@ -3,6 +3,7 @@
   width: 300px;
   display: flex;
   justify-content: space-between;
+  color: rgb(255, 255, 255);
 }
 @media screen and (max-width: 1129px) {
   .nav {

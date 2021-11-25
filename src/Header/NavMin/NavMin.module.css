@@ -12,8 +12,12 @@
 
 .toggleButtonMenu {
   background-color: black;
+  color: rgb(255, 255, 255);
+
 }
 .toggleButtonX {
   background-color: black;
   width: 50px;
+  color: rgb(255, 255, 255);
+
 }

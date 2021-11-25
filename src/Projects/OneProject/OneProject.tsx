@@ -1,5 +1,5 @@
-import React from "react";
-import style from "./OneProject.module.css"
+import React, {useState} from "react";
+import styles from "./OneProject.module.css"
 
 type OneProjectPropsType = {
     icon?: string
@@ -7,18 +7,30 @@ type OneProjectPropsType = {
     description: string
 }
 
+
 export const OneProject = (props: OneProjectPropsType) => {
+    const [changeColor, setChangeColor] = useState(false)
+    
+    const startColorEvent = () => {
+            setChangeColor(true)    
+    }
+    const stopColorEvent = () => {
+        setChangeColor(false)
+    }
+
+    const styled = () => {
+       return changeColor ? {borderTop: "5px solid #037fff"} :  {borderTop: "5px solid #2e344e"} 
+    }
+    
     return (
-        <div className={style.oneProject}>
-            {/* <div className={style.oneProjectContainer}> */}
-                <div className={style.icon}>
-                    <a className={style.watch} href="">Watch</a>
+        <div onMouseOver={startColorEvent} onMouseOut={stopColorEvent} style={styled()}  className={styles.oneProject}>
+            
+                <div className={styles.icon}>
+                    <a className={styles.watch} href="">Watch</a>
                 </div>
-                <h3>{props.title}</h3>
-                <span className={style.description}>{props.description}</span>
-            {/* </div> */}
-
-
+                <h4>{props.title}</h4>
+                <span className={styles.description}>{props.description}</span>
+       
         </div>
     )
 }

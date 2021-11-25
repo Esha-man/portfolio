@@ -7,14 +7,22 @@
     flex-wrap: wrap;
     text-align: center;
     margin: 5px;
-    border: 1px solid aliceblue;
-    padding: 20px;
+    /* border: 1px solid aliceblue; */
+    /* padding: 20px; */
     box-sizing: border-box;
+
+    border: 1px solid #2e344e;
+    border-top: 5px solid #2e344e;
+    padding: 30px;
+    background: #191d2b;
+    margin: 1rem;
     
 }
-
-/* .oneProjectContainer{
+/* .oneProject :hover {
+    border: 1px solid azure;
+    transition: all .4s ease-out;
 } */
+
 
 .icon {
     height: 250px;
@@ -26,6 +34,23 @@
     width: 50px;
    
 }
+
+.oneProject h4 {
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+  }
+  h4::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: auto;
+    bottom: 0;
+    height: 2px;
+    width: 50px;
+    background: #2e344e;
+  }
 
 .description {
 
