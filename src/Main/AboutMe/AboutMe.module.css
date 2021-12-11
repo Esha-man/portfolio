@@ -1,44 +1,82 @@
-.aboutMeContainer {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
+/*.aboutMeContainer ul li {*/
+/*    margin-bottom: 3px;*/
+/*}*/
+.aboutMeContainer ul {
+    padding-left: 0;
 }
 
-.aboutMeRow {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: left;
-  align-items: center;
-  /* margin-bottom: 5px; */
-}
-.aboutMeTitle {
-  width: 20%;
-  height: 20px;
-  display: flex;
-  justify-content: space-between;
-  font-size: 0.88em;
-}
-.aboutMeTitle span {
-  width: 100%
+.aboutMeContainer ul li {
+    list-style: none;
+    display: flex;
 }
 
-.aboutMeValue {
-  font-size: 0.88em;
-  /* padding: 3%; */
-  margin-left: 5%;
+.aboutMeContainer ul li b {
+    min-width: 120px;
+    display: inline-block;
+    position: relative;
+    margin-right: 7px;
 }
 
-.aboutMeTitle::after {
-  content: "|";
+b:after {
+    content: ":";
+    position: absolute;
+    top: 0;
+    left: auto;
+    right: 0;
 }
 
-@media screen and (max-width: 400px) {
-  .aboutMeRow {
-    font-size: 14px;
+@media screen and (max-width: 482px) {
+  .aboutMeContainer {
+    font-size: 12px;
   }
-  .aboutMeTitle {
+  li {
     width: 40%;
-    font-size: 14px;
+    font-size: 12px;
+      /*text-wrap: normal;*/
   }
 }
+
+/*.aboutMeContainer {*/
+/*  width: 100%;*/
+/*  display: flex;*/
+/*  flex-direction: column;*/
+/*}*/
+
+/*.aboutMeRow {*/
+/*  width: 100%;*/
+/*  display: flex;*/
+/*  flex-direction: row;*/
+/*  justify-content: left;*/
+/*  align-items: center;*/
+/*  !* margin-bottom: 5px; *!*/
+/*}*/
+/*.aboutMeTitle {*/
+/*  width: 20%;*/
+/*  height: 20px;*/
+/*  display: flex;*/
+/*  justify-content: space-between;*/
+/*  font-size: 0.88em;*/
+/*}*/
+/*.aboutMeTitle span {*/
+/*  width: 100%*/
+/*}*/
+
+/*.aboutMeValue {*/
+/*  font-size: 0.88em;*/
+/*  !* padding: 3%; *!*/
+/*  margin-left: 5%;*/
+/*}*/
+
+/*.aboutMeTitle::after {*/
+/*  content: "|";*/
+/*}*/
+
+/*@media screen and (max-width: 482px) {*/
+/*  .aboutMeRow {*/
+/*    font-size: 14px;*/
+/*  }*/
+/*  .aboutMeTitle {*/
+/*    width: 40%;*/
+/*    font-size: 14px;*/
+/*  }*/
+/*}*/

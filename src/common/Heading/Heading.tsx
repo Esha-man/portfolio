@@ -9,8 +9,8 @@ export const Heading = (props: HeadingPropsType) => {
   return (
     <div className={styles.headingWrapper}>
       <h2 className={styles.heading}>{props.heading}</h2>
-      {/* <h4>{props.descriptionHeading}</h4> */}
-      <div className={styles.line}><span></span></div>
+        <div className={styles.line}><span></span></div>
+        <span className={styles.ghostSpan}>{props.heading}</span>
     </div>
   )
 }

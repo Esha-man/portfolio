@@ -22,17 +22,24 @@ export const AboutMe = () => {
     return (
 
         <div className={style.aboutMeContainer}>
+            <ul>
             {aboutMeRows.map(el =>
-                <div className={style.aboutMeRow}>
-                    <div className={style.aboutMeTitle}>
-                        <span><b>{el.title}</b></span>
-                    </div>
-                    <div className={style.aboutMeValue}>
-                        <span>{el.value}</span>
-                    </div>
-                </div>
+                <li><b>{el.title}</b>{el.value}</li>
             )}
+            </ul>
         </div>
+    // <div className={style.aboutMeContainer}>
+    //         {aboutMeRows.map(el =>
+    //             <div className={style.aboutMeRow}>
+    //                 <div className={style.aboutMeTitle}>
+    //                     <span><b>{el.title}</b></span>
+    //                 </div>
+    //                 <div className={style.aboutMeValue}>
+    //                     <span>{el.value}</span>
+    //                 </div>
+    //             </div>
+    //         )}
+    //     </div>
 
     )
 }

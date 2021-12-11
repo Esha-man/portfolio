@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React, {useState} from "react";
 import styles from "./Main.module.css"
-import { AboutMe } from "./AboutMe/AboutMe";
-import { Heading } from "../common/Heading/Heading"
+import {AboutMe} from "./AboutMe/AboutMe";
+import {Heading} from "../common/Heading/Heading"
 
 type AboutMeRowsObjType = {
     title: string
@@ -10,12 +10,12 @@ type AboutMeRowsObjType = {
 export const Main = () => {
 
     const [aboutMeRows, setAboutMeRows] = useState<AboutMeRowsObjType[]>([
-        { title: "Birthday", value: "10.20.2021" },
-        { title: "Residence", value: "Russia" },
-        { title: "Address", value: "Moscow" },
-        { title: "E-mail", value: "blablabla@gmail.com" },
-        { title: "Phone", value: "8(800)555-55-55" },
-        { title: "Telegram", value: "@name" },
+        {title: "Birthday", value: "10.20.2021"},
+        {title: "Residence", value: "Russia"},
+        {title: "Address", value: "Moscow"},
+        {title: "E-mail", value: "blablabla@gmail.com"},
+        {title: "Phone", value: "8(800)555-55-55"},
+        {title: "Telegram", value: "@name"},
     ])
 
     return (
@@ -24,18 +24,20 @@ export const Main = () => {
             <div className={styles.mainHeaderWrapper}>
                 <h1>About me</h1>
                 <div className={styles.line}><span></span></div>
+                <span className={styles.ghostSpan}>About me</span>
             </div>
 
             <div className={styles.mainContainer}>
 
-                <div className={styles.photo}>
-                    {/* some photo */}
+                <div className={styles.photoWrapper}>
+                    <div className={styles.photo}>
+                        {/* some photo */}
+                    </div>
                 </div>
 
                 <div className={styles.text}>
-
                     <h2 className={styles.aboutName}>Hi, i am <span>Egor Shabanov</span></h2>
-                
+
                     <p>
                         Lorem ipsum — классический текст-«рыба». Является искажённым отрывком из философского трактата
                         Марка Туллия Цицерона «О пределах добра и зла»,
@@ -44,7 +46,7 @@ export const Main = () => {
                     </p>
                     <div className={styles.meInfo}>
 
-                        <AboutMe />
+                        <AboutMe/>
 
                     </div>
                 </div>
