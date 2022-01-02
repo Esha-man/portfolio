@@ -1,23 +1,42 @@
 .oneProject {
     width: 300px;
-   
+
     display: flex;
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
     text-align: center;
-    margin: 5px;
-    /* border: 1px solid aliceblue; */
-    /* padding: 20px; */
     box-sizing: border-box;
 
     border: 1px solid #2e344e;
     border-top: 5px solid #2e344e;
+    /*border-bottom: 1px solid #2e344e;*/
+
     padding: 30px;
     background: #191d2b;
     margin: 1rem;
-    
 }
+
+.oneProjectChange {
+    width: 300px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    box-sizing: border-box;
+
+    border: 1px solid #2e344e;
+    border-top: 5px solid #037fff;
+    border-bottom: 1px solid #037fff;
+
+    padding: 30px;
+    background: #191d2b;
+    margin: 1rem;
+}
+
+
 /* .oneProject :hover {
     border: 1px solid azure;
     transition: all .4s ease-out;
@@ -27,12 +46,36 @@
 .icon {
     height: 250px;
     width: 250px;
-    background-color: #35f606;
+    background-size: cover;
+    background-position: center;
 }
+
+.icon:hover {
+    height: 255px;
+    width: 255px;
+}
+
+.watchWrapper {
+    /*margin-top: 200px;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*justify-content: space-around;*/
+
+}
+
 .watch {
-    height: 10px;
-    width: 50px;
-   
+    /*height: 5px;*/
+    width: 100px;
+    color: black;
+    /*border: 1px solid black;*/
+    font-size: smaller;
+
+}
+
+.watch:hover {
+    /*color: #037fff;*/
+    font-weight: 700;
 }
 
 .oneProject h4 {
@@ -40,8 +83,9 @@
     position: relative;
     padding-bottom: 15px;
     margin-bottom: 15px;
-  }
-  h4::after {
+}
+
+h4::after {
     content: "";
     position: absolute;
     left: 0;
@@ -50,7 +94,25 @@
     height: 2px;
     width: 50px;
     background: #2e344e;
-  }
+}
+
+.oneProjectChange h4 {
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+h4::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: auto;
+    bottom: 0;
+    height: 2px;
+    width: 50px;
+    background: #2e344e;
+}
 
 .description {
 
@@ -60,13 +122,15 @@
     .oneProject {
         width: 100%;
     }
+
     .icon {
         height: 200px;
         width: 200px;
     }
 }
+
 @media screen and (max-width: 300px) {
-    
+
     .icon {
         max-width: 100px;
         max-height: 100px;

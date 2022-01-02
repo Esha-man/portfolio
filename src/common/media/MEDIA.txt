@@ -18,12 +18,41 @@
      height: 200px;
      width: 200px;
     }
-4. AboutMe -> (max-width: 400px) {
-  .aboutMeRow {
-    font-size: 14px;
+4. AboutMe ->
+@media screen and (max-width: 482px) {
+                  .aboutMeContainer {
+                      font-size: 12px;
+                  }
+
+                  .aboutMeContainer ul li b {
+                      min-width: 70px;
+                  }
+
+                  li {
+                      width: 40%;
+                      font-size: 12px;
+                  }
+              }
+
+5. Heading.tsx ->
+@media screen and (max-width: 735px) {
+  .ghostSpan {
+    font-size: 250%;
   }
-  .aboutMeTitle {
-    width: 40%;
-    font-size: 14px;
+}
+@media screen and (max-width: 416px) {
+  .ghostSpan {
+    font-size: 200%;
+  }
+}
+6. Main.tsx ->
+@media screen and (max-width: 735px) {
+  .ghostSpan {
+    font-size: 250%;
+  }
+}
+@media screen and (max-width: 416px) {
+  .ghostSpan {
+    font-size: 200%;
   }
 }

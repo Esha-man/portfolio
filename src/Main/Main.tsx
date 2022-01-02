@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import styles from "./Main.module.css"
+
 import {AboutMe} from "./AboutMe/AboutMe";
-import {Heading} from "../common/Heading/Heading"
 
 type AboutMeRowsObjType = {
     title: string
@@ -38,7 +38,7 @@ export const Main = () => {
                 <div className={styles.text}>
                     <h2 className={styles.aboutName}>Hi, i am <span>Egor Shabanov</span></h2>
 
-                    <p>
+                    <p className={styles.textBody}>
                         Lorem ipsum — классический текст-«рыба». Является искажённым отрывком из философского трактата
                         Марка Туллия Цицерона «О пределах добра и зла»,
                         написанного в 45 году до н. э. на латинском языке, обнаружение сходства приписывается

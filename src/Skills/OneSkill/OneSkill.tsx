@@ -18,7 +18,9 @@ export const OneSkill = (props: PropsType) => {
     }
 
     const styled = () => {
-       return changeColor ? {borderTop: "5px solid #037fff"} :  {borderTop: "5px solid #2e344e"} 
+       return changeColor
+           ? {borderTop: "5px solid #037fff", borderBottom: "1px solid #037fff"}
+           :  {borderTop: "5px solid #2e344e", borderBottom: "1px solid #2e344e"}
     }
     return (
         <div onMouseOver={startColorEvent} onMouseOut={stopColorEvent} style={styled()} className={style.one_skill}>

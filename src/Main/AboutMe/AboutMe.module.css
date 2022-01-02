@@ -8,10 +8,13 @@
 .aboutMeContainer ul li {
     list-style: none;
     display: flex;
+    margin-top: 0;
+    margin-bottom: 3px;
+    /*margin-bottom: 1rem;*/
 }
 
 .aboutMeContainer ul li b {
-    min-width: 120px;
+    min-width: 100px;
     display: inline-block;
     position: relative;
     margin-right: 7px;
@@ -26,14 +29,18 @@ b:after {
 }
 
 @media screen and (max-width: 482px) {
-  .aboutMeContainer {
-    font-size: 12px;
-  }
-  li {
-    width: 40%;
-    font-size: 12px;
-      /*text-wrap: normal;*/
-  }
+    .aboutMeContainer {
+        font-size: 12px;
+    }
+
+    .aboutMeContainer ul li b {
+        min-width: 70px;
+    }
+
+    li {
+        width: 40%;
+        font-size: 12px;
+    }
 }
 
 /*.aboutMeContainer {*/

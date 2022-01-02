@@ -1,11 +1,13 @@
 .one_skill {
   width: 250px;
-  /* background-color: aqua; */
 
   border: 1px solid #2e344e;
   border-top: 5px solid #2e344e;
   padding: 30px;
   background: #191d2b;
+  /*background: #343a40;*/
+  /*background: #212529;*/
+
   margin: 1rem;
 }
 
