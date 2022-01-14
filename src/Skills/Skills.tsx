@@ -1,8 +1,17 @@
-import { type } from "os";
 import React, { useState } from "react";
 import { Heading } from "../common/Heading/Heading";
 import { OneSkill } from "./OneSkill/OneSkill";
 import style from "./Skills.module.css"
+
+import jsLogo from "../assets/images/skills/js_logo.svg"
+import tsLogo from "../assets/images/skills/Typescript_logo_2020.svg.png"
+import reactLogo from "../assets/images/skills/icons8-react.svg"
+import reduxLogo from "../assets/images/skills/icons8-redux.svg"
+import cssLogo from "../assets/images/skills/icons8-css3.svg"
+import tddLogo from "../assets/images/skills/icons8-jest-can-collect-code-coverage-information-from-entire-projects-96.png"
+import gitLogo from "../assets/images/skills/icons8-git.svg"
+import ajaxLogo from "../assets/images/skills/ajax444.svg"
+import storyLogo from "../assets/images/skills/storybook.png"
 
 type SkillItemType = {
     icon: string
@@ -12,23 +21,35 @@ type SkillItemType = {
 
 export const Skills = () => {
 
+    const jsText = "Lorem ipsum — классический текст-«рыба». уллия Цицерона «О пределах н. э. на латинском языке, обнаружение сходства приписывается Ричарду МакКлинтоку."
+    const react = "Lorem ipsum — классический текст-«рыба». уллия Цицерона «О пределах н. э. на латинском языке, обнаружение сходства приписывается Ричарду МакКлинтоку."
+    const ts = "текст-«рыба». уллия Цицерона «О пределах н. э. на латинском языке, обнаружение сходства приписывается Ричарду."
+    const redux = "Lorem ipsum — классический текст-«рыба». уллия Цицерона «О пределах н. э. на латинском языке, обнаружение сходства."
+    const css = "Lorem ipsum — классический текст-«рыба». уллия Цицерона «О пределах н. э. на латинском языке, обнаружение сход."
+    const tdd = "ipsum — классический текст-«рыба». уллия Цицерона «О пределах н. э. на латинском языке, обнаружение сходства приписывается Ричарду МакКлинтоку."
+    const git = "Lorem ipsum — классический текст-«рыба». уллия Цицерона «О пределах н. э. на латинском языке, обнаружение сходства приписывается Ричарду."
+    const ajax = "классический текст-«рыба». уллия Цицерона «О пужение сходства приписывается Ричарду МакКлинтоку."
+    const storybook = "классический текст-«рыба». «О пужение сходства приписывается Ричарду МакКлинтоку."
+
     const [skillItem, setSkillIItem] = useState<SkillItemType[]>([
-        { icon: "", title: "HTML/CSS",
-            description: "Lorem ipsum — классический текст-«рыба». уллия Цицерона «О пределах н. э. на латинском языке, обнаружение сходства приписывается Ричарду МакКлинтоку." },
-        { icon: "string", title: "JS/TS",
-            description: "Lorem ipsum — классический текст-«рыба». Является искажённым отрывком из философского трактатинском языке, обнаружение сходства приписывается Ричарду МакКлинтоку. " },
-        { icon: "string", title: "React/React Hooks",
-            description: "Lorem ipsum — классический текст-«рыба». Является искажённым отрывком из философского трактата Марка Туллия Цицерона «О пределах добра и зла», написанного в 45 году до н. э. на латинском языке, обнаружение сходства приписывается Ричарду МакКлинтоку. " },
-        { icon: "string", title: "Redux/Redux Thunk",
-            description: "Lorem ipsum — классический текст-«рыба». Является искажённым отрывком из философского трактатинском языке, обнаружение сходства приписывается Ричарду МакКлинтоку" },
-        { icon: "string", title: "TDD(JEST)",
-            description: ". Является искажённым отрывком из философского трактата Маркактата Марка Ту Туллия Цицерона «О пределах добра и зла», написанного в 45 году до н. э.ктата Марка Ту " },
-        { icon: "string", title: "Storybook",
-            description: "Является искажённым отрывком из философского трактата Марка Туллия Цицерона «О пределах добра и зла», написанного в 45 году до н. э." },
-        { icon: "string", title: "GIT/GITHUB",
-            description: " из философского трактата Маркактата Марка Ту Туллия Цицерона «О пределах добра и зла», написанного в 45 году до " },
-        { icon: "string", title: "AJAX",
-            description: " из философского трактата Маркактата Марка Ту Туллия Цицерона «О пределах добра и зла», написанного в 45 году до  из философского трактата Маркактата Марка Ту Туллия Цицерона «О пределах добра и зла», написанного в 45 году до " },
+        { icon: jsLogo, title: "Javascript",
+            description: jsText },
+        { icon: tsLogo, title: "Typescript",
+            description: ts},
+        { icon: reactLogo, title: "React",
+            description: react},
+        { icon: reduxLogo, title: "Redux",
+            description: redux },
+        { icon: cssLogo, title: "CSS",
+            description: css },
+        { icon: tddLogo, title: "TDD(JEST)",
+            description: tdd},
+        { icon: gitLogo, title: "GIT",
+            description: git },
+        { icon: ajaxLogo, title: "AJAX",
+            description: ajax},
+        { icon: storyLogo, title: "Storybook",
+            description: storybook},
     ])
 
 

@@ -1,6 +1,5 @@
 import React, {useState} from "react";
 import styles from "./Main.module.scss"
-
 import {AboutMe} from "./AboutMe/AboutMe";
 
 type AboutMeRowsObjType = {

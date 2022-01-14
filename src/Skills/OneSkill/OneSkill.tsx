@@ -28,7 +28,7 @@ export const OneSkill = (props: PropsType) => {
              style={styled()}
              className={cssStyle.one_skill}>
 
-            <div className={cssStyle.icon}></div>
+            <img src={props.icon} className={cssStyle.icon}></img>
             <h3 className={cssStyle.skillTitle}>{props.title}</h3>
             <span className={cssStyle.description}>{props.description}</span>
 
