@@ -33,7 +33,7 @@ export const Skills = () => {
 
 
     return (
-        <div className={style.skillsBlock}>
+        <section className={style.skillsBlock}>
 
             <div className={style.skillsContainer}>
 
@@ -51,6 +51,6 @@ export const Skills = () => {
                 </div>
             </div>
 
-        </div>
+        </section>
     )
 }

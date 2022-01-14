@@ -6,11 +6,11 @@ import {NavMin} from "./NavMin/NavMin";
 
 export const Header = () => {
     return (
-        <div className={style.header}>
+        <header className={style.header}>
             <div className={style.headerContainer}>
                 <Nav/>
                 <NavMin/>
             </div>
-        </div>
+        </header>
     )
 }

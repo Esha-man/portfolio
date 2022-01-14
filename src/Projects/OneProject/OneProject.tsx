@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import styles from "./OneProject.module.css"
+import cssStyles from "./OneProject.module.scss"
 
 
 type OneProjectPropsType = {
@@ -22,39 +22,29 @@ export const OneProject = (props: OneProjectPropsType) => {
 
     const styled = () => {
         return changeColor ?
-            styles.oneProjectChange
+            cssStyles.oneProjectChange
             :
-            styles.oneProject
+            cssStyles.oneProject
     }
-    // const styled = () => {
-    //     return changeColor ?
-    //         {borderTop: "5px solid #037fff", borderBottom: "1px solid #037fff"}
-    //         :
-    //         {borderTop: "5px solid #2e344e", borderBottom: "1px solid #2e344e"}
-    //  }
 
 
     return (
         <div onMouseOver={startColorEvent}
              onMouseOut={stopColorEvent}
              className={styled()}
-            // style={props.style}
+
         >
 
 
-            <div className={styles.icon}
+            <div className={cssStyles.icon}
                  style={props.style}>
-                <div className={styles.watchWrapper}>
-                    <a className={styles.watch} href="">watch code</a>
-                    <a className={styles.watch} href="">demo</a>
-
-                    {/*    <div><a className={styles.watch} href="">watch code</a></div>*/}
-                    {/*<div><a className={styles.watch} href="">demo</a></div>*/}
+                <div className={cssStyles.watchWrapper}>
+                    <a className={cssStyles.watch} href="">watch code</a>
+                    <a className={cssStyles.watch} href="">demo</a>
                 </div>
-
             </div>
-            <h4>{props.title}</h4>
-            <span className={styles.description}>{props.description}</span>
+            <h3 className={cssStyles.projectTitle}>{props.title}</h3>
+            <span className={cssStyles.description}>{props.description}</span>
 
         </div>
     )

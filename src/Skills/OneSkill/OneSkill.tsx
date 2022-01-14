@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import style from "./OneSkill.module.css"
+import cssStyle from "./OneSkill.module.scss"
 
 type PropsType = {
     icon?: string
@@ -23,10 +23,14 @@ export const OneSkill = (props: PropsType) => {
            :  {borderTop: "5px solid #2e344e", borderBottom: "1px solid #2e344e"}
     }
     return (
-        <div onMouseOver={startColorEvent} onMouseOut={stopColorEvent} style={styled()} className={style.one_skill}>
-            <div className={style.icon}></div>
-            <h4>{props.title}</h4>
-            <span className={style.description}>{props.description}</span>
+        <div onMouseOver={startColorEvent}
+             onMouseOut={stopColorEvent}
+             style={styled()}
+             className={cssStyle.one_skill}>
+
+            <div className={cssStyle.icon}></div>
+            <h3 className={cssStyle.skillTitle}>{props.title}</h3>
+            <span className={cssStyle.description}>{props.description}</span>
 
         </div>
     )

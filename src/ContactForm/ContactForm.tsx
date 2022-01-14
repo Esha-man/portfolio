@@ -6,7 +6,7 @@ import { Heading } from "../common/Heading/Heading"
 
 export const ContactForm = () => {
     return (
-        <div className={style.formBlock}>
+        <section className={style.formBlock}>
             <div className={style.formContainer}>
                 
             <Heading heading={"Contacts"} />
@@ -25,6 +25,6 @@ export const ContactForm = () => {
                 </form>
 
             </div>
-        </div>
+        </section>
     )
 }

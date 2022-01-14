@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import style from "./AboutMe.module.css";
+import style from "./AboutMe.module.scss";
 
 
 type AboutMeRowsObjType = {
@@ -24,22 +24,9 @@ export const AboutMe = () => {
         <div className={style.aboutMeContainer}>
             <ul>
             {aboutMeRows.map(el =>
-                <li><b>{el.title}</b>{el.value}</li>
+                <li><strong>{el.title}</strong>{el.value}</li>
             )}
             </ul>
         </div>
-    // <div className={style.aboutMeContainer}>
-    //         {aboutMeRows.map(el =>
-    //             <div className={style.aboutMeRow}>
-    //                 <div className={style.aboutMeTitle}>
-    //                     <span><b>{el.title}</b></span>
-    //                 </div>
-    //                 <div className={style.aboutMeValue}>
-    //                     <span>{el.value}</span>
-    //                 </div>
-    //             </div>
-    //         )}
-    //     </div>
-
     )
 }

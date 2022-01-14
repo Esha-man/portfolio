@@ -1,26 +1,25 @@
-/*.aboutMeContainer ul li {*/
-/*    margin-bottom: 3px;*/
-/*}*/
-.aboutMeContainer ul {
-    padding-left: 0;
+.aboutMeContainer {
+    ul {
+        padding-left: 0;
+    }
+
+    ul li {
+        list-style: none;
+        display: flex;
+        margin-top: 0;
+        margin-bottom: 3px;
+    }
+
+    ul li strong {
+        min-width: 100px;
+        display: inline-block;
+        position: relative;
+        margin-right: 7px;
+    }
 }
 
-.aboutMeContainer ul li {
-    list-style: none;
-    display: flex;
-    margin-top: 0;
-    margin-bottom: 3px;
-    /*margin-bottom: 1rem;*/
-}
 
-.aboutMeContainer ul li b {
-    min-width: 100px;
-    display: inline-block;
-    position: relative;
-    margin-right: 7px;
-}
-
-b:after {
+strong:after {
     content: ":";
     position: absolute;
     top: 0;
@@ -33,12 +32,12 @@ b:after {
         font-size: 12px;
     }
 
-    .aboutMeContainer ul li b {
+    .aboutMeContainer ul li strong {
         min-width: 70px;
     }
 
     li {
-        width: 40%;
+        width: 100%;
         font-size: 12px;
     }
 }

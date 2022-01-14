@@ -1,0 +1,100 @@
+@import "../../common/styles/mixins";
+
+.oneProject, .oneProjectChange {
+  width: 300px;
+
+  @include projectSkillItem(
+                  flex,
+                  column,
+                  center,
+                  center,
+                  border,
+                  1px solid #2e344e,
+                  30px,
+                  #191d2b,
+                  1rem
+  );
+  //display: flex;
+  //flex-direction: column;
+  //align-items: center;
+  //text-align: center;
+  //box-sizing: border-box;
+  //border: 1px solid #2e344e;
+  //padding: 30px;
+  //background: #191d2b;
+  //margin: 1rem;
+
+  @media screen and (max-width: 781px) {
+    width: 100%;
+  }
+
+  .icon {
+    height: 250px;
+    width: 250px;
+    background-size: cover;
+    background-position: center;
+    @media screen and (max-width: 781px) {
+      height: 200px;
+      width: 200px;
+    }
+    @media screen and (max-width: 300px) {
+      max-width: 100px;
+      max-height: 100px;
+      display: block;
+    }
+
+    .watchWrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .watch {
+        width: 100px;
+        color: black;
+        font-size: smaller;
+        &:hover {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+
+  .projectTitle {
+    position: relative;
+    margin-top: 15px;
+    margin-bottom: 0;
+    font-weight: 700;
+
+    &:after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: auto;
+      bottom: -7px;
+      height: 2px;
+      width: 50px;
+      background: #2e344e;
+      transform: translateX(-50%);
+    }
+
+  }
+  .description {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+  }
+
+}
+
+
+.oneProject {
+  border-top: 5px solid #2e344e;
+}
+
+.oneProjectChange {
+  border-top: 5px solid #037fff;
+  border-bottom: 1px solid #037fff;
+}
+

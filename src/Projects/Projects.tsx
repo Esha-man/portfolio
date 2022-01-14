@@ -19,7 +19,6 @@ type OneProjectType = {
 
 export const Projects = () => {
 
-
     const [project, setproject] = useState<OneProjectType[]>([
         { icon: {backgroundImage: `url(${todolistJS})`}, title: "Todolist", description: "Todolist Todolist Todolist Todolist Todolist Todolist Todolist" },
         { icon: {backgroundImage: `url(${todolistTS})`}, title: "Todolist TS", description: "Todolist TS Todolist TS Todolist TS Todolist TS Todolist TS Todolist TS Todolist TS Todolist TS Todolist TS" },
@@ -30,7 +29,7 @@ export const Projects = () => {
     ])
 
     return (
-        <div className={style.projectsBlock}>
+        <section className={style.projectsBlock}>
 
             <div className={style.projectsContainer}>
 
@@ -51,6 +50,6 @@ export const Projects = () => {
 
             </div>
 
-        </div>
+        </section>
     )
 }

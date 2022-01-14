@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import styles from "./Main.module.css"
+import styles from "./Main.module.scss"
 
 import {AboutMe} from "./AboutMe/AboutMe";
 
@@ -19,7 +19,7 @@ export const Main = () => {
     ])
 
     return (
-        <div className={styles.mainBlock}>
+        <section className={styles.mainBlock}>
 
             <div className={styles.mainHeaderWrapper}>
                 <h1>About me</h1>
@@ -28,7 +28,6 @@ export const Main = () => {
             </div>
 
             <div className={styles.mainContainer}>
-
                 <div className={styles.photoWrapper}>
                     <div className={styles.photo}>
                         {/* some photo */}
@@ -39,9 +38,11 @@ export const Main = () => {
                     <h2 className={styles.aboutName}>Hi, i am <span>Egor Shabanov</span></h2>
 
                     <p className={styles.textBody}>
-                        Lorem ipsum — классический текст-«рыба». Является искажённым отрывком из философского трактата
+                        Lorem ipsum — классический текст-«рыба». Является искажённым
+                        отрывком из философского трактата
                         Марка Туллия Цицерона «О пределах добра и зла»,
-                        написанного в 45 году до н. э. на латинском языке, обнаружение сходства приписывается
+                        написанного в 45 году до н. э. на латинском языке, обнаружение
+                        сходства приписывается
                         Ричарду МакКлинтоку.
                     </p>
                     <div className={styles.meInfo}>
@@ -53,6 +54,6 @@ export const Main = () => {
             </div>
 
 
-        </div>
+        </section>
     )
 }

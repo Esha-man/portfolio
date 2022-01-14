@@ -18,13 +18,15 @@ export const NavMin = () => {
         ?
         <button className={styles.toggleButtonMenu} onClick={toggleMenu}>MENU</button>
         :
-        <div>
+        <nav>
           <button className={styles.toggleButtonX} onClick={toggleMenu}>X</button>
-          <div><a href="">Main</a></div>
-          <div><a href="">Skills</a></div>
-          <div><a href="">Projects</a></div>
-          <div><a href="">Contacts</a></div>
-        </div>
+          <ul>
+            <li><a href="">Main</a></li>
+            <li><a href="">Skills</a></li>
+            <li><a href="">Projects</a></li>
+            <li><a href="">Contacts</a></li>
+          </ul>
+        </nav>
       }
     </div>
   )
