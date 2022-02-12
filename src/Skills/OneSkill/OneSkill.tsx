@@ -8,27 +8,30 @@ type PropsType = {
 }
 
 export const OneSkill = (props: PropsType) => {
-    const [changeColor, setChangeColor] = useState(false)
-    
-    const startColorEvent = () => {
-            setChangeColor(true)    
-    }
-    const stopColorEvent = () => {
-        setChangeColor(false)
-    }
+    // const [changeColor, setChangeColor] = useState(false)
+    //
+    // const startColorEvent = () => {
+    //         setChangeColor(true)
+    // }
+    // const stopColorEvent = () => {
+    //     setChangeColor(false)
+    // }
+    //
+    // const styled = () => {
+    //    return changeColor
+    //        ? {borderTop: "5px solid #037fff", borderBottom: "1px solid #037fff"}
+    //        :  {borderTop: "5px solid #2e344e", borderBottom: "1px solid #2e344e"}
+    // }
 
-    const styled = () => {
-       return changeColor
-           ? {borderTop: "5px solid #037fff", borderBottom: "1px solid #037fff"}
-           :  {borderTop: "5px solid #2e344e", borderBottom: "1px solid #2e344e"}
-    }
     return (
-        <div onMouseOver={startColorEvent}
-             onMouseOut={stopColorEvent}
-             style={styled()}
-             className={cssStyle.one_skill}>
+        <div className={cssStyle.one_skill}>
 
-            <img src={props.icon} className={cssStyle.icon}></img>
+            {/*<div onMouseOver={startColorEvent}*/}
+            {/* onMouseOut={stopColorEvent}*/}
+            {/* style={styled()}*/}
+            {/* className={cssStyle.one_skill}>*/}
+
+            <img src={props.icon} className={cssStyle.icons}></img>
             <h3 className={cssStyle.skillTitle}>{props.title}</h3>
             <span className={cssStyle.description}>{props.description}</span>
 

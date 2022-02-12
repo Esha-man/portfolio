@@ -1,25 +1,24 @@
  медиа-запросы находятся в файлах
  0. index.css - >(max-width: 1129px) {
-  * {
-    font-size: medium;
-  }
-}
-(max-width: 300px) {
-  * {
-    font-size: 5px;
-  }
-}
- 1. Nav ->  width: 100%;
+                  * {
+                    font-size: medium;
+                  }
+                }
+                (max-width: 300px) {
+                  * {
+                    font-size: 5px;
+                  }
+                }
+ 1. Nav ->      width: 100%;
  2. oneSkill ->  screen and (max-width: 654px) width: 100%;.icon {
- height: 90px;
-  width: 90px;
-}
+                 height: 90px;
+                  width: 90px;
+                }
 3. OneProject -> (max-width: 781px) { width: 100%;} .icon {
-     height: 200px;
-     width: 200px;
-    }
-4. AboutMe ->
-@media screen and (max-width: 482px) {
+                 height: 200px;
+                 width: 200px;
+                }
+4. AboutMe ->  @media screen and (max-width: 482px) {
                   .aboutMeContainer {
                       font-size: 12px;
                   }
@@ -35,24 +34,33 @@
               }
 
 5. Heading.tsx ->
-@media screen and (max-width: 735px) {
-  .ghostSpan {
-    font-size: 250%;
-  }
-}
-@media screen and (max-width: 416px) {
-  .ghostSpan {
-    font-size: 200%;
-  }
-}
+                @media screen and (max-width: 735px) {
+                  .ghostSpan {
+                    font-size: 250%;
+                  }
+                }
+                @media screen and (max-width: 416px) {
+                  .ghostSpan {
+                    font-size: 200%;
+                  }
+                }
 6. Main.tsx ->
-@media screen and (max-width: 735px) {
-  .ghostSpan {
-    font-size: 250%;
-  }
-}
-@media screen and (max-width: 416px) {
-  .ghostSpan {
-    font-size: 200%;
-  }
-}
+                @media screen and (max-width: 735px) {
+                  .ghostSpan {
+                    font-size: 250%;
+                  }
+                }
+                @media screen and (max-width: 416px) {
+                  .ghostSpan {
+                    font-size: 200%;
+                  }
+                }
+7. Header ->   @media screen and (max-width: 1129px) {
+                     align-items: center;
+
+                 }
+
+8. BurgerNav -> @media screen and (min-width: 1129px) {
+                  .navB {
+                    display: none;
+                  }

@@ -1,23 +1,23 @@
-.navMin {
+.navB {
   border: 1px solid;
-  width: 300px;
+  //width: 300px;
   display: flex;
   justify-content: end;
 }
+
 @media screen and (min-width: 1129px) {
-  .navMin {
+  .navB {
     display: none;
   }
 }
 
-.toggleButtonMenu {
+.menuIsOff {
   background-color: black;
   color: rgb(255, 255, 255);
-
 }
-.toggleButtonX {
+
+.menuIsOn {
   background-color: black;
   width: 50px;
   color: rgb(255, 255, 255);
-
 }

@@ -1,5 +1,6 @@
 .footerBlock {
   height: 200px;
+  margin-top: 60px;
 
   .footerContainer {
     align-items: center;
@@ -20,6 +21,7 @@
         height: 50px;
         width: 50px;
         margin: 10px;
+
         @media screen and (max-width: 500px){
           height: 25px;
           width: 25px;
@@ -27,11 +29,16 @@
 
         }
       }
+      .item:hover {
+        transform: scale(1.05, 1.05);
+        transition: 0.5s;
+      }
+
+      .item:not(:hover){
+        transition: 0.5s;
+      }
     }
 
-    .name {
-
-    }
   }
 
 }

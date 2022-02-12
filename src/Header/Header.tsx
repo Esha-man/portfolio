@@ -1,7 +1,7 @@
 import React from "react";
-import style from "./Header.module.css"
+import style from "./Header.module.scss"
 import {Nav} from "./Nav/Nav";
-import {NavMin} from "./NavMin/NavMin";
+import {BurgerNav} from "./BurgerNav/BurgerNav";
 
 
 export const Header = () => {
@@ -9,7 +9,7 @@ export const Header = () => {
         <header className={style.header}>
             <div className={style.headerContainer}>
                 <Nav/>
-                <NavMin/>
+                <BurgerNav/>
             </div>
         </header>
     )
