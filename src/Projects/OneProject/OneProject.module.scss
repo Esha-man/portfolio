@@ -1,4 +1,5 @@
 @import "../../common/styles/mixins";
+@import "../../common/styles/variables";
 
 .oneProject {
   width: 300px;
@@ -8,12 +9,12 @@
                   center,
                   center,
                   border,
-                  1px solid #2e344e,
+                  1px solid $borderColor,
                   30px,
-                  #191d2b,
+                  $bgColor,
                   1rem
   );
-  border-top: 5px solid #2e344e;
+  border-top: 5px solid $borderColor;
 
 
   @media screen and (max-width: 781px) {
@@ -72,7 +73,7 @@
       bottom: -7px;
       height: 2px;
       width: 50px;
-      background: #2e344e;
+      background: $borderColor;
       transform: translateX(-50%);
     }
 
@@ -89,8 +90,8 @@
 
 
 .oneProject:hover {
-  border-top: 5px solid #037fff;
-  border-bottom: 1px solid #037fff;
+  border-top: 5px solid $auxiliaryColor;
+  border-bottom: 1px solid $auxiliaryColor;
   transition: 0.5s;
 }
 

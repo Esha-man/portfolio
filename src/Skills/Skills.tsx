@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 import {Heading} from "../common/Heading/Heading";
 import {OneSkill} from "./OneSkill/OneSkill";
 import style from "./Skills.module.css"
@@ -34,43 +34,16 @@ export const Skills = () => {
     const ajax = "классический текст-«рыба». уллия Цицерона «О пужение сходства приписывается Ричарду МакКлинтоку."
     const storybook = "классический текст-«рыба». «О пужение сходства приписывается Ричарду МакКлинтоку."
 
-    const [skillItem, setSkillIItem] = useState<SkillItemType[]>([
-        {
-            icon: jsLogo, title: "Javascript",
-            description: jsText
-        },
-        {
-            icon: tsLogo, title: "Typescript",
-            description: ts
-        },
-        {
-            icon: reactLogo, title: "React",
-            description: react
-        },
-        {
-            icon: reduxLogo, title: "Redux",
-            description: redux
-        },
-        {
-            icon: cssLogo, title: "CSS",
-            description: css
-        },
-        {
-            icon: tddLogo, title: "TDD(JEST)",
-            description: tdd
-        },
-        {
-            icon: gitLogo, title: "GIT",
-            description: git
-        },
-        {
-            icon: ajaxLogo, title: "AJAX",
-            description: ajax
-        },
-        {
-            icon: storyLogo, title: "Storybook",
-            description: storybook
-        },
+    const skillItem: SkillItemType[] = ([
+        {icon: jsLogo, title: "Javascript", description: jsText},
+        {icon: tsLogo, title: "Typescript", description: ts},
+        {icon: reactLogo, title: "React", description: react},
+        {icon: reduxLogo, title: "Redux", description: redux},
+        {icon: cssLogo, title: "CSS", description: css},
+        {icon: tddLogo, title: "TDD(JEST)", description: tdd},
+        {icon: gitLogo, title: "GIT", description: git},
+        {icon: ajaxLogo, title: "AJAX", description: ajax},
+        {icon: storyLogo, title: "Storybook", description: storybook},
     ])
 
 
@@ -84,6 +57,7 @@ export const Skills = () => {
                     <div className={style.skills}>
                         {skillItem.map(el => {
                             return <OneSkill
+                                key={el.title}
                                 icon={el.icon}
                                 description={el.description}
                                 title={el.title}

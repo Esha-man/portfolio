@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 import cssStyle from "./OneSkill.module.scss"
 
 type PropsType = {
@@ -31,7 +31,7 @@ export const OneSkill = (props: PropsType) => {
             {/* style={styled()}*/}
             {/* className={cssStyle.one_skill}>*/}
 
-            <img src={props.icon} className={cssStyle.icons}></img>
+            <img src={props.icon} className={cssStyle.icons} alt={props.title}></img>
             <h3 className={cssStyle.skillTitle}>{props.title}</h3>
             <span className={cssStyle.description}>{props.description}</span>
 

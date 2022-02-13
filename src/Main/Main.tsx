@@ -1,22 +1,11 @@
-import React, {useState} from "react";
+import React from "react";
 import styles from "./Main.module.scss"
 import {AboutMe} from "./AboutMe/AboutMe";
 import {Fade} from "react-awesome-reveal";
 
-type AboutMeRowsObjType = {
-    title: string
-    value: string
-}
+
 export const Main = () => {
 
-    const [aboutMeRows, setAboutMeRows] = useState<AboutMeRowsObjType[]>([
-        {title: "Birthday", value: "10.20.2021"},
-        {title: "Residence", value: "Russia"},
-        {title: "Address", value: "Moscow"},
-        {title: "E-mail", value: "blablabla@gmail.com"},
-        {title: "Phone", value: "8(800)555-55-55"},
-        {title: "Telegram", value: "@name"},
-    ])
 
     return (
         <Fade>

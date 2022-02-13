@@ -1,7 +1,8 @@
-@mixin projectSkillItem ( $display, $flex-direction,
-$align-items, $text-align, $box-sizing, $border,
-$padding, $background, $margin) {
+@import "./variables";
 
+@mixin projectSkillItem( $display, $flex-direction,
+    $align-items, $text-align, $box-sizing, $border,
+    $padding, $background, $margin) {
   display: $display;
   flex-direction: $flex-direction;
   align-items: $align-items;
@@ -12,3 +13,53 @@ $padding, $background, $margin) {
   background: $background;
   margin: $margin;
 }
+//-----Заголовки----//
+//синяя линия под заголовком
+@mixin ghostLineFirst() {
+  position: absolute;
+  left: 0;
+  top: auto;
+  bottom: 0;
+  border-radius: 100px;
+  width: 35px;
+  height: 5px;
+  background: $auxiliaryColor;
+  z-index: 1;
+}
+
+// серая линия под заголовком
+@mixin ghostLineTwo () {
+  position: absolute;
+  left: 0;
+  top: auto;
+  bottom: 0;
+  border-radius: 100px;
+  height: 5px;
+  width: 100px;
+  background: rgba(3, 127, 255, 0.3);
+}
+
+//полупрозрачный заголовок
+@mixin ghostSpan() {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  font-size: 400%;
+  line-height: 1;
+  font-weight: 900;
+  color: rgb(24, 27, 38);
+  display: inline-block;
+  text-transform: uppercase;
+  z-index: -1;
+  transform: translateY(-40%);
+  user-select: none;
+  white-space: nowrap;
+  @media screen and (max-width: 735px) {
+    font-size: 250%;
+  }
+  @media screen and (max-width: 416px) {
+    font-size: 200%;
+  }
+}
+//-----Заголовки конец----//
+

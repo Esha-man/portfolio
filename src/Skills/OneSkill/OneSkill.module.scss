@@ -1,4 +1,5 @@
 @import "../../common/styles/mixins";
+@import "../../common/styles/variables";
 
 .one_skill {
   width: 250px;
@@ -7,11 +8,12 @@
           center,
           center,
           border,
-          1px solid #2e344e,
+          1px solid $borderColor,
           30px,
-          #191d2b,
+          $bgColor,
           1rem);
-  border-top: 5px solid #2e344e;
+  border-top: 5px solid $borderColor;
+
 
   .icons {
     height: 60px;
@@ -43,7 +45,7 @@
       bottom: -7px;
       height: 2px;
       width: 50px;
-      background: #2e344e;
+      background: $borderColor;
       transform: translateX(-50%);
     }
 
@@ -59,8 +61,8 @@
 }
 
 .one_skill:hover {
-  border-top: 5px solid #037fff;
-  border-bottom: 1px solid #037fff;
+  border-top: 5px solid $auxiliaryColor;
+  border-bottom: 1px solid $auxiliaryColor;
   transition: 0.5s;
 }
 
@@ -68,67 +70,4 @@
   transition: 0.5s;
 }
 
-
-
-
-//@import "../../common/styles/mixins";
-//
-//.one_skill {
-//  width: 250px;
-//  @include projectSkillItem(flex,
-//          column,
-//          center,
-//          center,
-//          border,
-//          1px solid #2e344e,
-//          30px,
-//          #191d2b,
-//          1rem);
-//
-//
-//  .icons {
-//    height: 60px;
-//    width: 60px;
-//  }
-//
-//  .icons:hover {
-//    display: block;
-//    transform: scale(1.05, 1.05);
-//    transition: 1s;
-//
-//  }
-//
-//  .icons:not(:hover) {
-//    transition: 1s;
-//  }
-//
-//  .skillTitle {
-//    position: relative;
-//    margin-top: 15px;
-//    margin-bottom: 0;
-//    font-weight: 700;
-//
-//    &:after {
-//      content: "";
-//      position: absolute;
-//      left: 50%;
-//      top: auto;
-//      bottom: -7px;
-//      height: 2px;
-//      width: 50px;
-//      background: #2e344e;
-//      transform: translateX(-50%);
-//    }
-//
-//  }
-//
-//  .description {
-//    display: block;
-//    margin-block-start: 1em;
-//    margin-block-end: 1em;
-//    margin-inline-start: 0;
-//    margin-inline-end: 0;
-//  }
-//}
-//
 

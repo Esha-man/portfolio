@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 import style from "./Projects.module.css"
 import {OneProject} from "./OneProject/OneProject";
 import {Heading} from "../common/Heading/Heading"
@@ -21,8 +21,7 @@ type OneProjectType = {
 
 export const Projects = () => {
 
-    const [project, setproject] = useState<OneProjectType[]>([
-
+    const project: OneProjectType[] = ([
         {
             icon: {backgroundImage: `url(${todolistTS})`},
             title: "Todolist TS",
@@ -84,6 +83,7 @@ export const Projects = () => {
                     <div className={style.allProjects}>
                         {project.map(el => {
                             return <OneProject
+                                key={el.title}
                                 title={el.title}
                                 description={el.description}
                                 style={el.icon}

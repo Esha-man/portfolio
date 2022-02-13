@@ -1,9 +1,8 @@
-import React, {useState} from "react";
+import React from "react";
 import cssStyles from "./OneProject.module.scss"
 
 
 type OneProjectPropsType = {
-    // icon?: any
     style: any
     title: string
     description: string
@@ -13,22 +12,22 @@ type OneProjectPropsType = {
 
 
 export const OneProject = (props: OneProjectPropsType) => {
-    const [changeColor, setChangeColor] = useState(false)
-
-    const startColorEvent = () => {
-        setChangeColor(true)
-    }
-    const stopColorEvent = () => {
-        setChangeColor(false)
-    }
-
-    const styled = () => {
-        return changeColor
-            ?
-            cssStyles.oneProjectChange
-            :
-            cssStyles.oneProject
-    }
+    // const [changeColor, setChangeColor] = useState(false)
+    //
+    // const startColorEvent = () => {
+    //     setChangeColor(true)
+    // }
+    // const stopColorEvent = () => {
+    //     setChangeColor(false)
+    // }
+    //
+    // const styled = () => {
+    //     return changeColor
+    //         ?
+    //         cssStyles.oneProjectChange
+    //         :
+    //         cssStyles.oneProject
+    // }
 
 
     return (

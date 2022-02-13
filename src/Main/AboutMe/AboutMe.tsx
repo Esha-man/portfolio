@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import style from "./AboutMe.module.scss";
 
 
@@ -9,7 +9,7 @@ type AboutMeRowsObjType = {
 
 export const AboutMe = () => {
 
-    const [aboutMeRows, setAboutMeRows] = useState<AboutMeRowsObjType[]>([
+    const aboutMeRows:AboutMeRowsObjType[] = ([
         { title: "Birthday", value: "10.20.2021" },
         { title: "Residence", value: "Russia" },
         { title: "Address", value: "Moscow" },
@@ -24,7 +24,7 @@ export const AboutMe = () => {
         <div className={style.aboutMeContainer}>
             <ul>
             {aboutMeRows.map(el =>
-                <li><strong>{el.title}</strong>{el.value}</li>
+                <li key={el.title}><strong>{el.title}</strong>{el.value}</li>
             )}
             </ul>
         </div>
