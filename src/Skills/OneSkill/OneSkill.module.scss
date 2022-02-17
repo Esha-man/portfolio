@@ -15,6 +15,7 @@
   border-top: 5px solid $borderColor;
 
 
+
   .icons {
     height: 60px;
     width: 60px;
@@ -22,13 +23,12 @@
 
   .icons:hover {
     display: block;
-    transform: scale(1.05, 1.05);
-    transition: 0.5s;
-
+    transform: scale(0.9, 0.9);
+    transition: 1.5s;
   }
 
   .icons:not(:hover) {
-    transition: 0.5s;
+    transition: 1.5s;
   }
 
   .skillTitle {
@@ -63,11 +63,13 @@
 .one_skill:hover {
   border-top: 5px solid $auxiliaryColor;
   border-bottom: 1px solid $auxiliaryColor;
-  transition: 0.5s;
+  transition: 1s;
+  box-shadow: 0 3px 10px 0 rgb(38 59 94);
+
 }
 
 .one_skill:not(:hover){
-  transition: 0.5s;
+  transition: 1s;
 }
 
 

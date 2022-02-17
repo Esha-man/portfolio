@@ -1,33 +1,39 @@
-import React, { useState } from "react";
-import styles from "./BurgerNav.module.scss"
+import React from "react";
+import cssStyle from "./BurgerNav.module.scss"
+import Link from "react-scroll/modules/components/Link";
 
 
 export const BurgerNav = () => {
 
-  const [toggleOn, setToggleOn] = useState<boolean>(false)
+    return (
+        <nav className={cssStyle.burgerNav}>
 
-  const toggleMenu = () => {
-    setToggleOn(!toggleOn)
-  }
-  // const menuDiv = { height: "100vh", width: "100vh"}
-
-
-  return (
-    <div className={styles.navB} >
-      {!toggleOn
-        ?
-        <button className={styles.menuIsOff} onClick={toggleMenu}>MENU</button>
-        :
-        <nav>
-          <button className={styles.menuIsOn} onClick={toggleMenu}>X</button>
-          <ul>
-            <li><a href="#main">Main</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            {/*<li><a href="#contacts">Contacts</a></li>*/}
-          </ul>
+            <div className={cssStyle.burgerNavItems}>
+                <ul>
+                    <li><Link
+                        activeClass={cssStyle.active}
+                        to="main"
+                        spy={true}
+                        smooth={true}
+                        offset={-7}
+                        duration={500}>Main</Link></li>
+                    <li><Link
+                        activeClass={cssStyle.active}
+                        to="skills"
+                        spy={true}
+                        smooth={true}
+                        offset={0}
+                        duration={500}>Skills</Link></li>
+                    <li><Link
+                        activeClass={cssStyle.active}
+                        to="projects"
+                        spy={true}
+                        smooth={true}
+                        offset={-7}
+                        duration={500}>Projects</Link></li>
+                </ul>
+            </div>
+        <button className={cssStyle.burgerBtn} style={{color: "white"}}>...</button>
         </nav>
-      }
-    </div>
-  )
+    )
 }

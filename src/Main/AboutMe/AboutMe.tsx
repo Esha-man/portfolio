@@ -9,13 +9,13 @@ type AboutMeRowsObjType = {
 
 export const AboutMe = () => {
 
-    const aboutMeRows:AboutMeRowsObjType[] = ([
-        { title: "Birthday", value: "10.20.2021" },
-        { title: "Residence", value: "Russia" },
-        { title: "Address", value: "Moscow" },
-        { title: "E-mail", value: "blablabla@gmail.com" },
-        { title: "Phone", value: "8(800)555-55-55" },
-        { title: "Telegram", value: "@name" },
+    const aboutMeRows: AboutMeRowsObjType[] = ([
+        {title: "Birthday", value: "10.20.2021"},
+        {title: "Residence", value: "Russia"},
+        {title: "Address", value: "Moscow"},
+        {title: "E-mail", value: "blablabla@gmail.com"},
+        {title: "Phone", value: "8(800)555-55-55"},
+        {title: "Telegram", value: "@name"},
     ])
 
 
@@ -23,9 +23,9 @@ export const AboutMe = () => {
 
         <div className={style.aboutMeContainer}>
             <ul>
-            {aboutMeRows.map(el =>
-                <li key={el.title}><strong>{el.title}</strong>{el.value}</li>
-            )}
+                {aboutMeRows.map(el =>
+                    <li key={el.title}><strong>{el.title}</strong>{el.value}</li>
+                )}
             </ul>
         </div>
     )

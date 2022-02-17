@@ -1,5 +1,8 @@
+@import "../common/styles/variables";
+
 .footerBlock {
-  height: 200px;
+  background: $bgSecondColor;
+  height: 150px;
   margin-top: 60px;
 
   .footerContainer {
@@ -7,7 +10,7 @@
     flex-direction: column;
     justify-content: center;
     display: flex;
-    border: 1px solid;
+    //border: 1px solid;
     height: 100%;
     width: 80%;
     margin: 0 auto;
@@ -30,7 +33,7 @@
         }
       }
       .item:hover {
-        transform: scale(1.05, 1.05);
+        transform: scale(0.9, 0.9);
         transition: 0.5s;
       }
 

@@ -1,9 +1,9 @@
 import React from "react";
 import {Heading} from "../common/Heading/Heading";
 import {OneSkill} from "./OneSkill/OneSkill";
-import style from "./Skills.module.css"
+import style from "./Skills.module.scss"
 
-import jsLogo from "../assets/images/skills/js_logo.svg"
+// import jsLogo from "../assets/images/skills/js_logo.svg"
 import tsLogo from "../assets/images/skills/Typescript_logo_2020.svg.png"
 import reactLogo from "../assets/images/skills/icons8-react.svg"
 import reduxLogo from "../assets/images/skills/icons8-redux.svg"
@@ -24,7 +24,7 @@ type SkillItemType = {
 
 export const Skills = () => {
 
-    const jsText = "Lorem ipsum — классический текст-«рыба». уллия Цицерона «О пределах н. э. на латинском языке, обнаружение сходства приписывается Ричарду МакКлинтоку."
+    // const jsText = "Lorem ipsum — классический текст-«рыба». уллия Цицерона «О пределах н. э. на латинском языке, обнаружение сходства приписывается Ричарду МакКлинтоку."
     const react = "Lorem ipsum — классический текст-«рыба». уллия Цицерона «О пределах н. э. на латинском языке, обнаружение сходства приписывается Ричарду МакКлинтоку."
     const ts = "текст-«рыба». Туллия Цицерона «О пределах н. э. на латинском языке, обнаружение сходства приписывается Ричарду."
     const redux = "Lorem ipsum — классический текст-«рыба». уллия Цицерона «О пределах н. э. на латинском языке, обнаружение сходства."
@@ -35,7 +35,7 @@ export const Skills = () => {
     const storybook = "классический текст-«рыба». «О пужение сходства приписывается Ричарду МакКлинтоку."
 
     const skillItem: SkillItemType[] = ([
-        {icon: jsLogo, title: "Javascript", description: jsText},
+        // {icon: jsLogo, title: "Javascript", description: jsText},
         {icon: tsLogo, title: "Typescript", description: ts},
         {icon: reactLogo, title: "React", description: react},
         {icon: reduxLogo, title: "Redux", description: redux},

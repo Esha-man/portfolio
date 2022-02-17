@@ -1,0 +1,34 @@
+@import "../common/styles/variables.scss";
+
+.skillsBlock {
+  min-height: 100vh;
+  padding-bottom: 60px;
+  padding-top: 30px;
+  background: $bgSecondColor;
+  border: 1px solid white;
+
+}
+
+.skillsContainer {
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+
+  /*border: 1px solid;*/
+  height: 100%;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.skills {
+  /*border: 1px solid;*/
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}

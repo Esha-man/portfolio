@@ -1,23 +1,60 @@
-.navB {
-  border: 1px solid;
-  //width: 300px;
-  display: flex;
-  justify-content: end;
-}
+@import "../../common/styles/variables";
+@import "../../common/styles/mixins";
 
-@media screen and (min-width: 1129px) {
-  .navB {
-    display: none;
+.burgerNav {
+  position: relative;
+
+  .burgerNavItems {
+    width: 100%;
+    display: flex;
+    color: rgb(255, 255, 255);
+    background-color: #494a4b;
+
+    ul {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+
+      li {
+        a {
+          border-bottom: 2px solid #151111;
+          text-decoration: none;
+          color: rgb(255, 255, 255);
+
+          &:hover {
+            border-bottom: 2px solid #037fff;
+            transition: 0.5s;
+          }
+
+          &:not(:hover) {
+            transition: 0.5s;
+          }
+          .active {
+            color: #037fff;
+          }
+        }
+
+
+      }
+    }
   }
+
+  .burgerBtn {
+    width: 30px;
+    height: 30px;
+    background-color: $bgColorApp;
+    position: absolute;
+    top: 10px;
+    right: 0;
+  }
+
 }
 
-.menuIsOff {
-  background-color: black;
-  color: rgb(255, 255, 255);
-}
+@media screen and (min-width: 501px) {
+  .burgerNav {
+    display: none;
+    width: 100%;
 
-.menuIsOn {
-  background-color: black;
-  width: 50px;
-  color: rgb(255, 255, 255);
+
+  }
 }

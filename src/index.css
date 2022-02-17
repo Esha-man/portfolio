@@ -18,11 +18,11 @@ li {
 
 
 
-@media screen and (max-width: 1129px) {
-  div {
-    font-size: medium;
-  }
-}
+/*@media screen and (max-width: 1129px) {*/
+/*  div {*/
+/*    font-size: medium;*/
+/*  }*/
+/*}*/
 
 @media screen and (max-width: 300px) {
   div {
