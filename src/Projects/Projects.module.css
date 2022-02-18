@@ -1,7 +1,7 @@
 .projectsBlock {
     min-height: 100vh;
-    padding-top: 30px;
-    /*border: 1px solid white;*/
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .projectsContainer {
@@ -9,7 +9,6 @@
     flex-direction: row;
     justify-content: center;
 
-    /*border: 1px solid;*/
     height: 100%;
     width: 80%;
     margin: 0 auto;

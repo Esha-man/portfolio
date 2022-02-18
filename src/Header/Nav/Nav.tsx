@@ -29,7 +29,6 @@ export const Nav = () => {
                 smooth={true}
                 offset={21}
                 duration={500}>Projects</Link></li>
-
         </ul>
     </nav>
   )

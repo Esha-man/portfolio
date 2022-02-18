@@ -14,13 +14,4 @@ export const Header = () => {
         </header>
     )
 }
-// export const Header = () => {
-//     return (
-//         <header className={style.header}>
-//             <div className={style.headerContainer}>
-//                 <Nav/>
-//                 <BurgerNav/>
-//             </div>
-//         </header>
-//     )
-// }
+
