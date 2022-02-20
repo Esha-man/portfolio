@@ -12,13 +12,13 @@
 
   }
 
-  ul {
+  .navItems {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 
-    li {
+
       a {
         border-bottom: 2px solid #151111;
         text-decoration: none;
@@ -32,14 +32,16 @@
         &:not(:hover) {
           transition: 0.5s;
         }
+
       }
+    .active {
+      //color: #037fff;
     }
+
   }
 
-  .active {
-    color: #037fff;
-  }
 }
+
 
 @media screen and (max-width: 500px) {
   .nav {
@@ -47,11 +49,20 @@
   }
 }
 
+
+//@import "../../common/styles/variables";
+//@import "../../common/styles/mixins";
+//
 //.nav {
+//  padding-right: 30px;
 //  width: 300px;
 //  display: flex;
 //  justify-content: space-between;
 //  color: rgb(255, 255, 255);
+//  @media screen and (max-width: 900px) {
+//    padding-right: 0;
+//
+//  }
 //
 //  ul {
 //    width: 100%;
@@ -59,6 +70,26 @@
 //    flex-direction: row;
 //    justify-content: space-between;
 //
+//    li {
+//      a {
+//        border-bottom: 2px solid #151111;
+//        text-decoration: none;
+//        color: rgb(255, 255, 255);
+//
+//        &:hover {
+//          border-bottom: 2px solid #037fff;
+//          transition: 0.5s;
+//        }
+//
+//        &:not(:hover) {
+//          transition: 0.5s;
+//        }
+//      }
+//    }
+//  }
+//
+//  .active {
+//    color: #037fff;
 //  }
 //}
 //

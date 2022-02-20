@@ -25,41 +25,39 @@ export const Projects = () => {
         {
             icon: {backgroundImage: `url(${todolistTS})`},
             title: "Todolist TS",
-            description: "Todolist TS Todolist TS Todolist TS Todolist TS Todolist TS Todolist " +
-                "TS Todolist TS Todolist TS Todolist TS",
+            description: "Трекер задач, написанный на React и Typescript. Для управления состоянием используется Redux." +
+                " Также применяется Redux-Thunk, Axios и MaterialUi.",
             ghPages: "https://esha-man.github.io/Todolist_TS/",
             ghCode: "https://github.com/Esha-man/Todolist_TS",
         },
         {
             icon: {backgroundImage: `url(${socialNetwork})`},
             title: "Social network",
-            description: "Social networkSocial networkSocial networkSocial networkSocial" +
-                " networkSocial networkSocial networkSocial network",
+            description: "Проект на React, Redux, TS, RestAPI, Redux-Thunk, MaterialUI," +
+                " используются как хуки так и классовые компоненты." +
+                " Email: esh8284@gmail.com, Pass: hellO28415again",
             ghPages: "https://esha-man.github.io/social_network/#/",
             ghCode: "https://github.com/Esha-man/social_network",
         },
         {
             icon: {backgroundImage: `url(${counter})`},
             title: "Counter",
-            description: "Counter Counter Counter Counter Counter CounterCounter" +
-                " CounterCounter Counter Counter Counter",
+            description: "Простой счетчик c использованием Rect. Состояние хранится в LocalStorage.",
             ghPages: "https://esha-man.github.io/Counter/",
             ghCode: "https://github.com/Esha-man/Counter",
         },
         {
             icon: {backgroundImage: `url(${components})`},
             title: "Simple components",
-            description: "Components Components Components Components Components " +
-                "Components Components Components Components Components " +
-                "Components Components Components",
+            description: "Небольшие компоненты на React с применением хуков.",
             ghPages: "",
             ghCode: "https://github.com/Esha-man/react__components",
 
         },
         {
             icon: {backgroundImage: `url(${todolistJS})`},
-            title: "Todolist",
-            description: "Todolist Todolist Todolist Todolist Todolist Todolist Todolist",
+            title: "TodolistJS",
+            description: "Пробный трекер задач на Javascript и CSS",
             ghPages: "",
             ghCode: "https://github.com/Esha-man/Todolist_short",
         },
@@ -74,8 +72,9 @@ export const Projects = () => {
     ])
 
     return (
+        <Fade>
         <section id={"projects"} className={style.projectsBlock}>
-            <Fade>
+
                 <div className={style.projectsContainer}>
 
                     <Heading heading={"My projects"}/>
@@ -95,7 +94,8 @@ export const Projects = () => {
                     </div>
 
                 </div>
-            </Fade>
+
         </section>
+        </Fade>
     )
 }

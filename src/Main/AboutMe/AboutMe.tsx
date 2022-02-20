@@ -10,12 +10,12 @@ type AboutMeRowsObjType = {
 export const AboutMe = () => {
 
     const aboutMeRows: AboutMeRowsObjType[] = ([
-        {title: "Birthday", value: "10.20.2021"},
-        {title: "Residence", value: "Russia"},
-        {title: "Address", value: "Moscow"},
-        {title: "E-mail", value: "blablabla@gmail.com"},
-        {title: "Phone", value: "8(800)555-55-55"},
-        {title: "Telegram", value: "@name"},
+        {title: "Дата", value: "30.11.1991"},
+        {title: "Страна", value: "Россия"},
+        {title: "Город", value: "Москва"},
+        {title: "E-mail", value: "esh8284@gmail.com"},
+        {title: "Телефон", value: "+7(910)340-68-09"},
+        // {title: "Telegram", value: "@name"},
     ])
 
 
