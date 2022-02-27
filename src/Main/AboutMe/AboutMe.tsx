@@ -15,7 +15,7 @@ export const AboutMe = () => {
         {title: "Город", value: "Москва"},
         {title: "E-mail", value: "esh8284@gmail.com"},
         {title: "Телефон", value: "+7(910)340-68-09"},
-        // {title: "Telegram", value: "@name"},
+        {title: "Telegram", value: "@hdmihead"},
     ])
 
 

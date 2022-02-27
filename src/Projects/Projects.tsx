@@ -34,8 +34,7 @@ export const Projects = () => {
             icon: {backgroundImage: `url(${socialNetwork})`},
             title: "Social network",
             description: "Проект на React, Redux, TS, RestAPI, Redux-Thunk, MaterialUI," +
-                " используются как хуки так и классовые компоненты." +
-                " Email: esh8284@gmail.com, Pass: hellO28415again",
+                " используются как хуки так и классовые компоненты.",
             ghPages: "https://esha-man.github.io/social_network/#/",
             ghCode: "https://github.com/Esha-man/social_network",
         },
@@ -48,27 +47,19 @@ export const Projects = () => {
         },
         {
             icon: {backgroundImage: `url(${components})`},
-            title: "Simple components",
-            description: "Небольшие компоненты на React с применением хуков.",
-            ghPages: "",
-            ghCode: "https://github.com/Esha-man/react__components",
+            title: "Clock",
+            description: "Аналоговые и цифровые часы на React с применением хуков.",
+            ghPages: "https://esha-man.github.io/Clock/",
+            ghCode: "https://github.com/Esha-man/Clock",
 
         },
         {
             icon: {backgroundImage: `url(${todolistJS})`},
             title: "TodolistJS",
             description: "Пробный трекер задач на Javascript и CSS",
-            ghPages: "",
+            ghPages: "https://esha-man.github.io/Todolist_short/",
             ghCode: "https://github.com/Esha-man/Todolist_short",
         },
-        // {
-        //     icon: {background: "red"},
-        //     title: "Some project",
-        //     description: "SOME PROJECT SOME PROJECT SOME PROJECT SOME PROJECT SOME " +
-        //         "PROJECT SOME PROJECT SOME PROJECT SOME PROJECT SOME PROJECT",
-        //     ghPages: "",
-        //     ghCode: "",
-        // },
     ])
 
     return (

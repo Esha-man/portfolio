@@ -12,30 +12,11 @@ type OneProjectPropsType = {
 
 
 export const OneProject = (props: OneProjectPropsType) => {
-    // const [changeColor, setChangeColor] = useState(false)
-    //
-    // const startColorEvent = () => {
-    //     setChangeColor(true)
-    // }
-    // const stopColorEvent = () => {
-    //     setChangeColor(false)
-    // }
-    //
-    // const styled = () => {
-    //     return changeColor
-    //         ?
-    //         cssStyles.oneProjectChange
-    //         :
-    //         cssStyles.oneProject
-    // }
+
 
 
     return (
-        // <div onMouseOver={startColorEvent}
-        //      onMouseOut={stopColorEvent}
-        //      className={styled()}
-        //
-        // >
+
            <div className={cssStyles.oneProject}>
 
 
