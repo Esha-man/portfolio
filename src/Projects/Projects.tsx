@@ -7,6 +7,7 @@ import counter from "../assets/images/counter.png";
 import todolistTS from "../assets/images/calendar-g15cab6b1f_640.png";
 import todolistJS from "../assets/images/todolist-js-2.png";
 import components from "../assets/images/react-components.jpg";
+import messengerVue from "../assets/images/MESS.png";
 import {Fade} from "react-awesome-reveal";
 
 
@@ -60,6 +61,14 @@ export const Projects = () => {
             ghPages: "https://esha-man.github.io/Todolist_short/",
             ghCode: "https://github.com/Esha-man/Todolist_short",
         },
+        {
+            icon: {backgroundImage: `url(${messengerVue})`},
+            title: "Messenger",
+            description: "Небольшой мессенджер на фреймворке Vue.js 3",
+            ghPages: "https://esha-man.github.io/messenger_vue/",
+            ghCode: "https://github.com/Esha-man/messenger_vue",
+        },
+
     ])
 
     return (
