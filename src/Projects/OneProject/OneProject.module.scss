@@ -3,9 +3,7 @@
 
 .oneProject {
   width: 300px;
-  @include projectSkillItem(flex, column, 
-  center, center, border, 1px solid $borderColor, 
-  30px, $bgColor, 1rem);
+  @include projectSkillItem(flex, column, center, center, border, 1px solid $borderColor, 30px, $bgColor, 1rem);
 
   border-top: 5px solid $borderColor;
   justify-content: space-between;
@@ -41,6 +39,21 @@
   .icon:hover {
     transform: scale(0.9, 0.9);
     transition: 1.5s;
+    &::after {
+      content: attr(data-title);
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 5px;
+      z-index: 1;
+      background: rgba(3, 127, 255, 0.5);
+      color: rgba(255, 255, 255);
+      text-align: center;
+      font-size: 11px;
+      padding: 5px 10px;
+      border-top: 1px solid $borderColor;
+      border-bottom: 1px solid $borderColor;
+    }
   }
   .icon:not(:hover) {
     transition: 1.5s;
@@ -75,10 +88,13 @@
     width: 100px;
     color: white;
     font-size: smaller;
+    padding: 2px;
+    border-top: 1px solid $bgColor;
+    border-bottom: 1px solid $bgColor;
 
     &:hover {
-      // font-weight: 600;
-      color: $auxiliaryColor;
+      border-top: 1px solid $borderColor;
+      border-bottom: 1px solid $borderColor;
       transition: 0.5s;
     }
     &:not(:hover) {
@@ -98,101 +114,3 @@
   transition: 1s;
 }
 
-//@import "../../common/styles/mixins";
-//
-//.oneProject, .oneProjectChange {
-//  width: 300px;
-//  @include projectSkillItem(
-//                  flex,
-//                  column,
-//                  center,
-//                  center,
-//                  border,
-//                  1px solid #2e344e,
-//                  30px,
-//                  #191d2b,
-//                  1rem
-//  );
-//
-//
-//  @media screen and (max-width: 781px) {
-//    width: 100%;
-//  }
-//
-//  .icon {
-//    height: 250px;
-//    width: 250px;
-//    background-size: cover;
-//    background-position: center;
-//    @media screen and (max-width: 781px) {
-//      height: 200px;
-//      width: 200px;
-//    }
-//    @media screen and (max-width: 300px) {
-//      max-width: 100px;
-//      max-height: 100px;
-//      display: block;
-//    }
-//
-//    .watchWrapper {
-//      display: flex;
-//      flex-direction: column;
-//      align-items: center;
-//
-//      .watch {
-//        width: 100px;
-//        color: black;
-//        font-size: smaller;
-//        &:hover {
-//          font-weight: 700;
-//        }
-//      }
-//    }
-//  }
-//  .icon:hover {
-//    transform: scale(1.05, 1.05);
-//    transition: 2s;
-//  }
-//  .icon:not(:hover) {
-//    transition: 2s;
-//  }
-//
-//  .projectTitle {
-//    position: relative;
-//    margin-top: 15px;
-//    margin-bottom: 0;
-//    font-weight: 700;
-//
-//    &:after {
-//      content: "";
-//      position: absolute;
-//      left: 50%;
-//      top: auto;
-//      bottom: -7px;
-//      height: 2px;
-//      width: 50px;
-//      background: #2e344e;
-//      transform: translateX(-50%);
-//    }
-//
-//  }
-//  .description {
-//    display: block;
-//    margin-block-start: 1em;
-//    margin-block-end: 1em;
-//    margin-inline-start: 0;
-//    margin-inline-end: 0;
-//  }
-//
-//}
-//
-//
-//.oneProject {
-//  border-top: 5px solid #2e344e;
-//}
-//
-//.oneProjectChange {
-//  border-top: 5px solid #037fff;
-//  border-bottom: 1px solid #037fff;
-//}
-//

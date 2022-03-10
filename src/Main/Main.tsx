@@ -2,7 +2,6 @@ import React from "react";
 import styles from "./Main.module.scss"
 import { AboutMe } from "./AboutMe/AboutMe";
 import { Fade } from "react-awesome-reveal";
-import photo from "../assets/images/main/photo_portfolio3.jpg"
 
 
 export const Main = () => {

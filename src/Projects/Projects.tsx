@@ -3,7 +3,7 @@ import style from "./Projects.module.css"
 import {OneProject} from "./OneProject/OneProject";
 import {Heading} from "../common/Heading/Heading"
 import socialNetwork from "../assets/images/social-media-g62ea17012_640.png";
-import counter from "../assets/images/counter.png";
+import counter from "../assets/images/counter-56024.png";
 import todolistTS from "../assets/images/calendar-g15cab6b1f_640.png";
 import todolistJS from "../assets/images/todolist-js-2.png";
 import components from "../assets/images/react-components.jpg";

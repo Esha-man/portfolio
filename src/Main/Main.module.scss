@@ -46,7 +46,7 @@
         // animation styles -->
         --x: 10px;
         --y: 20px;
-        transform: perspective(1000px) rotateX(var(--_a, 40deg));
+        transform: perspective(1000px) rotateX(var(--_a, 20deg));
         clip-path: polygon(
           var(--y) var(--y),
           calc(100% - var(--y)) var(--y),
