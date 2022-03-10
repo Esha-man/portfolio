@@ -16,7 +16,7 @@
     transition: 0.7s;
 
     color: rgb(255, 255, 255);
-    background-color: rgba(21, 17, 17, .95);
+    background-color: rgba(21, 17, 17, 0.95);
     font-size: 20px;
     position: absolute;
     height: 0;
@@ -25,12 +25,11 @@
     padding: 20px;
     //border-bottom: 2px solid $bgColorApp;
 
-
     a {
       border-bottom: 2px solid #151111;
       text-decoration: none;
       color: rgb(255, 255, 255);
-
+      cursor: pointer;
       &:hover {
         border-bottom: 2px solid $auxiliaryColor;
         transition: 0.5s;
@@ -49,12 +48,9 @@
   .showNav {
     transform: translate(0, 0);
     height: 250px;
-
-
   }
 
   .burgerBtn {
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -88,13 +84,8 @@
         z-index: 20;
       }
     }
-
   }
-
 }
-
-
-
 
 @media screen and (min-width: 501px) {
   .burgerNav {
