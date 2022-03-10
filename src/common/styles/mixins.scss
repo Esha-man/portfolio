@@ -3,6 +3,7 @@
 @mixin projectSkillItem( $display, $flex-direction,
     $align-items, $text-align, $box-sizing, $border,
     $padding, $background, $margin) {
+      
   display: $display;
   flex-direction: $flex-direction;
   align-items: $align-items;

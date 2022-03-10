@@ -60,35 +60,33 @@
         padding: var(--y) var(--y) 0 var(--y);
         transition: 1s;
 
-        cursor: pointer;
         /**/
 
         //native styles -->
-        width: 250px;
-        height: 300px;
+        width: 350px;
+        height: 350px;
         background-image: url("../assets/images/main/photo_portfolio3.jpg");
         background-size: cover;
         background-position: center;
         position: relative;
         box-shadow: 0 3px 10px 0 rgb(38 59 94);
 
-        
 
-        &:before {
-          content: "";
-          position: absolute;
-          height: 110%;
-          width: 105%;
-          border: 5px solid $auxiliaryColor;
-          right: 15px;
-          top: -15px;
-          z-index: -1;
-          box-shadow: 0 3px 10px 0 rgb(38 59 94);
-        }
+        // &:before {
+        //   content: "";
+        //   position: absolute;
+        //   height: 110%;
+        //   width: 105%;
+        //   border: 5px solid $auxiliaryColor;
+        //   right: 15px;
+        //   top: -15px;
+        //   z-index: -1;
+        //   box-shadow: 0 3px 10px 0 rgb(38 59 94);
+        // }
 
         @media screen and (max-width: 350px) {
-          max-width: 150px;
-          max-height: 200px;
+          max-width: 250px;
+          max-height: 250px;
         }
       }
 

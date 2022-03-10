@@ -3,20 +3,12 @@
 
 .oneProject {
   width: 300px;
-  @include projectSkillItem(
-                  flex,
-                  column,
-                  center,
-                  center,
-                  border,
-                  1px solid $borderColor,
-                  30px,
-                  $bgColor,
-                  1rem
-  );
+  @include projectSkillItem(flex, column, 
+  center, center, border, 1px solid $borderColor, 
+  30px, $bgColor, 1rem);
+
   border-top: 5px solid $borderColor;
-
-
+  justify-content: space-between;
   @media screen and (max-width: 781px) {
     width: 100%;
   }
@@ -40,14 +32,9 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-
-      .watch {
-        width: 100px;
-        color: black;
-        font-size: smaller;
-        &:hover {
-          font-weight: 700;
-        }
+      img {
+        width: 50px;
+        opacity: 50%;
       }
     }
   }
@@ -76,7 +63,6 @@
       background: $borderColor;
       transform: translateX(-50%);
     }
-
   }
   .description {
     display: block;
@@ -85,23 +71,32 @@
     margin-inline-start: 0;
     margin-inline-end: 0;
   }
+  .watchCode {
+    width: 100px;
+    color: white;
+    font-size: smaller;
 
+    &:hover {
+      // font-weight: 600;
+      color: $auxiliaryColor;
+      transition: 0.5s;
+    }
+    &:not(:hover) {
+      transition: 0.5s;
+    }
+  }
 }
-
 
 .oneProject:hover {
   border-top: 5px solid $auxiliaryColor;
   border-bottom: 1px solid $auxiliaryColor;
   transition: 1s;
   box-shadow: 0 3px 10px 0 rgb(38 59 94);
-
 }
 
-.oneProject:not(:hover){
+.oneProject:not(:hover) {
   transition: 1s;
 }
-
-
 
 //@import "../../common/styles/mixins";
 //
