@@ -42,7 +42,7 @@ export const Projects = () => {
         {
             icon: {backgroundImage: `url(${counter})`},
             title: "Counter",
-            description: "Простой счетчик c использованием Rect. Состояние хранится в LocalStorage.",
+            description: "Простой счетчик c использованием React. Состояние хранится в LocalStorage.",
             ghPages: "https://esha-man.github.io/Counter/",
             ghCode: "https://github.com/Esha-man/Counter",
         },
