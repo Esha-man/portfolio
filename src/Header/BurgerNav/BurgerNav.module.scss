@@ -6,7 +6,6 @@
   height: 100%;
 
   .burgerNavItems {
-    //display: none;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -49,41 +48,6 @@
     height: 250px;
   }
 
-  .burgerBtn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    width: 30px;
-    height: 30px;
-    background-color: $bgSecondColor;
-    position: absolute;
-    top: 14px;
-    right: 20px;
-    color: white;
-
-    border: 2px solid $auxiliaryColor;
-
-    .btnLines {
-      width: 20px;
-      height: 2px;
-      background-color: $auxiliaryColor;
-      //border-bottom: 1px dotted #037fff;
-      &:after {
-        transform: translateY(-8px);
-      }
-
-      &:before {
-        content: "";
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        bottom: 7px;
-        left: 8px;
-        z-index: 20;
-      }
-    }
-  }
 }
 
 @media screen and (min-width: 501px) {
@@ -91,4 +55,46 @@
     display: none;
     width: 100%;
   }
+}
+
+.ham {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 400ms;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 10px;
+  right: 20px;
+  background-color: $bgSecondColor;
+}
+.hamRotate.active {
+  transform: rotate(45deg);
+}
+.hamRotate180.active {
+  transform: rotate(180deg);
+}
+.line {
+  fill: none;
+  transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+  stroke: white;
+  stroke-width: 5.5;
+  stroke-linecap: round;
+}
+.ham1 .top {
+  stroke-dasharray: 40 139;
+}
+.ham1 .bottom {
+  stroke-dasharray: 40 180;
+}
+.ham1.active .top {
+  stroke-dashoffset: -98px;
+}
+.ham1.active .bottom {
+  stroke-dashoffset: -138px;
 }

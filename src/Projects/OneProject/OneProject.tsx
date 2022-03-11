@@ -21,7 +21,7 @@ export const OneProject = (props: OneProjectPropsType) => {
             rel="noreferrer">
                 <div className={cssStyles.icon}
                     style={props.style}
-                    data-title="watch project">
+                    data-title="click image to watch project">
                 </div>
             </a>
             <h3 className={cssStyles.projectTitle}>{props.title}</h3>
